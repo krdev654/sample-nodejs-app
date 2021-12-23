@@ -7,8 +7,8 @@ ENV MONGO_DB_USERNAME=admin \
 # create a directory
 RUN mkdir -p /home/app
 
-# Copy the node js app code from the current directory to the container /home/app folder
-COPY . /home/app
+# Copy the node js app code from the host directory to the container /home/app folder
+COPY app /home/app
 
 WORKDIR /home/app
 
