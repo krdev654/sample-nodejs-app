@@ -10,5 +10,7 @@ RUN mkdir -p /home/app
 # Copy the node js app code from the current directory to the container /home/app folder
 COPY . /home/app
 
+WORKDIR /home/app
+
 # Start the app
 CMD ["node", "server.js"]
